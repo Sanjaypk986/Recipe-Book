@@ -4,7 +4,7 @@ import RecipeCard from "./Home/RecipeCard";
 
 const Italian = () => {
   const [recipes, setRecipes] = useState([]);
-  const ApiKey = "f75ed18627aa405f84684294f84b7f1b";
+  const ApiKey = import.meta.env.VITE_API_KEY;
   useEffect(() => {
     // for Random recipe
     const fetchDataItalian = async () => {
