@@ -14,7 +14,7 @@ const Italian = () => {
         );
         const data = response.data.results; // Assuming the data you need is in response.data.recipes
         setRecipes(data);
-        console.log(data)
+        console.log(data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
